@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Software Development & IT Insights | Relic Edge</title>
+    <meta name="description" content="Stay updated with the latest trends, tips, and insights on software development, mobile apps, web technology, and IT consulting from Relic Edge.">
+    <meta name="keywords" content="software blog Ghana, IT insights Ghana, software development articles, tech blog Ghana">
+    <link rel="canonical" href="https://relicedge.com/blog">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Relic Edge Blog | Software & IT Insights">
+    <meta property="og:description" content="Latest articles and insights on software development, mobile apps, and IT consulting by Relic Edge.">
+    <meta property="og:url" content="https://relicedge.com/blog">
+    <meta property="og:image" content="https://relicedge.com/images/blog-og.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="Relic Edge Blog | Software & IT Insights">
+    <meta name="twitter:description" content="Latest software development and IT consulting articles from Relic Edge.">
+    <meta name="twitter:image" content="https://relicedge.com/images/blog-og.jpg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Owl Carousel -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/Relic_edge_logo.png" type="image/png">
+    <!-- Lottie Player -->
+    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-section {
+            background: url(../Images/relic\ edge\ \ digital\ solutions.jpg) center center / cover no-repeat;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .blog-post {
+            background-color: var(--bg-light);
+            border: 1px solid var(--bg-light);
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .blog-post h5 {
+            font-weight: bold;
+        }
+
+        .form-section {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .form-control, .form-label {
+            border: none;
+            border-bottom: 2px solid var(--cta-text);
+            border-radius: 0;
+            margin-bottom: 1rem;
+        }
+
+        .btn-submit {
+            background-color: var(--clr-primary);
+            border: none;
+            padding: 10px 30px;
+            font-weight: bold;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top py-3 bg-white shadow-sm">
+            <div class="container-fluid py-0">
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-dark" href="index.html">
+                    <img src="Images/Relic_edge_logo.png" alt="Relic Edge Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html">
+                                <i class="bi bi-house-door-fill me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="services.html">
+                                <i class="bi bi-gear-fill me-1"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about.html">
+                                <i class="bi bi-info-circle-fill me-1"></i> About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="blog.html">
+                                <i class="bi bi-journal-text me-1"></i> Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="contact.html">
+                                <i class="bi bi-envelope-fill me-1"></i> Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="testimonial.html">
+                                <i class="bi bi-person-lines-fill me-1"></i>Testimonials
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="faq.html">
+                                <i class="bi bi-question-circle-fill me-1"></i> Help | FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header and nav ending -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section d-flex align-items-center justify-content-center text-center wow fadeInUp" data-wow-delay="0.5s">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 hero-content wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="lead text-light mt-3">Relic Edge Blog</h1>
+                        <p class="fw-bold text-light display-5">Where innovation meets excellence, empowering businesses with custom software solutions that drive growth and success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Latest Posts -->
+        <section class="container py-5">
+            <h2 class="text-center fw-bold mb-4">INSIGHTS & INNOVATIONS</h2>
+            <div class="row g-4">
+                <!-- Post 1 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="blog-post">
+                        <img src="Images/business software.jpg" alt="Custom Software for SMEs">
+                        <div class="p-3">
+                            <h5>Empowering SMEs with Custom Software</h5>
+                            <p class="text-muted small">May 01, 2025</p>
+                            <p>Discover how Relic Edge is transforming operations for small businesses through intelligent, scalable custom software solutions...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="blog-post">
+                        <img src="Images/mobile app development.jpg" alt="Mobile-first Design">
+                        <div class="p-3">
+                            <h5>Why Mobile-First is the Future of App Development</h5>
+                            <p class="text-muted small">April 26, 2025</p>
+                            <p>Our team breaks down why mobile-first development is no longer optional—and how Relic Edge is leading this shift in Ghana and beyond...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="blog-post">
+                        <img src="Images/ui_ux design.jpg" alt="UI/UX Standards">
+                        <div class="p-3">
+                            <h5>Modern UI/UX Standards in 2025</h5>
+                            <p class="text-muted small">April 12, 2025</p>
+                            <p>Explore the latest trends in UI/UX design and how our designers are integrating functionality with visual excellence for client solutions...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 4 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="blog-post">
+                        <img src="Images/ecormmerce and pay.jpg" alt="eCommerce Scaling">
+                        <div class="p-3">
+                            <h5>Scaling Ghanaian eCommerce with Tech</h5>
+                            <p class="text-muted small">March 30, 2025</p>
+                            <p>We look at how Ghanaian online retailers can scale sustainably through cloud-native infrastructure and data-backed UX design...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Map + Contact -->
+        <section class="container-fluid bg-light py-5">
+            <div class="row g-4 px-3 px-lg-5">
+                <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3970.5644490225363!2d-0.22194885654593513!3d5.631121618236638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1747409765699!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-section">
+                        <h4 class="fw-bold mb-4">Contact Relic Edge</h4>
+                        <form id="contactForm" action="https://formsubmit.co/info@relicedge.com" method="post" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                                <div class="invalid-feedback">Enter a valid email address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                                <div class="invalid-feedback">Subject is required.</div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="message" name="message" class="form-control" rows="4" placeholder="How can we support your digital vision?" required></textarea>
+                                <div class="invalid-feedback">Please describe your request.</div>
+                            </div>
+                            <div class="col-12 d-flex gap-3">
+                                <button class="btn btn-primary w-100" type="submit" id="emailSubmit">Send via Email</button>
+                                <button class="btn btn-success w-100" type="button" onclick="sendWhatsApp()">Send via WhatsApp</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <!-- Contact Info -->
+                <div class="col-lg-3">
+                    <h2 class="footer-title">Let’s Talk</h2>
+                    <p class="footer-contact mb-1"><a href="mailto:info@relicedge.com">info@relicedge.com</a></p>
+                    <p class="footer-contact mb-1"><a href="mailto:sales@relicedge.com">sales@relicedge.com</a></p>
+                    <p class="footer-contact mb-1"><a href="tel:+233598238797">+233 598 238 797</a></p>
+                    <p class="footer-contact">K3 Dove Street, Achimota Golf Hills, Accra, Ghana</p>
+                </div>
+                <!-- Navigation Links -->
+                <div class="col-lg-3">
+                    <ul class="list-unstyled footer-links">
+                        <li><i class="fa fa-caret-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="fa fa-caret-right"></i> <a href="booking.html">Book Now</a></li>
+                        <li><i class="fa fa-caret-right"></i> <a href="blog.html">Blog</a></li>
+                    </ul>
+                    <ul class="list-unstyled footer-links">
+                        <li><i class="fa fa-caret-right"></i> <a href="about.html">About</a></li>
+                        <li><i class="fa fa-caret-right"></i> <a href="services.html">Services</a></li>
+                        <li><i class="fa fa-caret-right"></i> <a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Services Summary -->
+                <div class="col-lg-6">
+                    <div class="row gy-3">
+                        <div class="col-md-4">
+                            <strong>Software Solutions</strong>
+                            <p>Custom Web & Mobile Apps for Real Estate, Logistics, Schools, and more.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <strong>eCommerce & MVPs</strong>
+                            <p>Online stores with MoMo/Paystack & fast MVP builds for startups.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <strong>SaaS Products</strong>
+                            <p>Scalable white-labeled systems – HR, Payroll, POS. Built to resell.</p>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <form class="d-flex newsletter-form needs-validation" action="#" method="post" novalidate>
+                                <div class="me-2 w-100">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                    <div class="invalid-feedback">Enter a valid email to subscribe.</div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Social & Legal -->
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 pt-4 border-top">
+                <div class="footer-social mb-3 mb-md-0">
+                    <a href="#"><i class="bi bi-dribbble"></i></a>
+                    <a href="#"><i class="bi bi-behance"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class="footer-legal">
+                    <span>&copy; 2025 Relic Edge</span> &nbsp;
+                    <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Sticky Button -->
+    <a href="https://wa.me/233598238797" target="_blank" aria-label="Chat on WhatsApp" id="whatsappButton">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark btn-lg back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark btn-lg back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Supporting JS Libraries -->
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
